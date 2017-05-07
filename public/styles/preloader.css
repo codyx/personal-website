@@ -1,0 +1,13 @@
+.home-preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -100px;
+  margin-left: -32px;
+}
+
+body {
+  overflow-x: hidden;
+}
