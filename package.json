@@ -2,10 +2,11 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "My personal Website",
-  "main": "build/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "build": "babel src/ -d build/",
+    "build": "webpack -d",
     "prepublish": "npm run build",
+    "start-dev": "./node_modules/.bin/webpack-dev-server --content-base public/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,18 +29,23 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-config-google": "^0.7.1",
+    "eslint-plugin-react": "^6.10.3",
     "flow-bin": "^0.44.2",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4"
   },
   "dependencies": {
+    "material-ui": "^1.0.0-alpha.12",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-hot-loader": "^3.0.0-beta.6"
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-tap-event-plugin": "^2.0.1",
+    "styled-components": "^1.4.6"
   }
 }
