@@ -5,7 +5,7 @@ import Body from './elements/Body';
 import Footer from './elements/Footer';
 
 const Home = () => (
-  <Layout container gutter={0}>
+  <Layout container align="center" gutter={0}>
     <Header />
     <Body />
     <Footer />
