@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import Chip from 'material-ui/Chip';
 import Avatar from 'material-ui/Avatar';
 import styled from 'styled-components';
@@ -13,24 +13,20 @@ const stack = [
 
 const StackWrapper = styled.div`
   display: flex;
-  justifyContent: center;
-  flexWrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 `;
 
-class Technologies extends Component {
-  render() {
-    return (
-      <StackWrapper>
-        {stack.map((tech, idx) =>
-          <Chip
-            key={idx}
-            label={tech.name}
-            avatar={<Avatar src={`dist/svg/${tech.iconName}.svg`} />}
-          />
-        )}
-      </StackWrapper>
-    );
-  }
-}
+const Technologies = () => (
+  <StackWrapper>
+    {stack.map((tech, idx) =>
+      <Chip
+        key={idx}
+        label={tech.name}
+        avatar={<Avatar src={`dist/svg/${tech.iconName}.svg`} />}
+      />
+    )}
+  </StackWrapper>
+);
 
 export default Technologies;
