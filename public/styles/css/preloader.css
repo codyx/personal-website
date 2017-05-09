@@ -10,5 +10,16 @@
 
 body {
   overflow-x: hidden;
-  font-family: Roboto, serif
+  font-family: Roboto, serif;
+  color: #000;
+}
+
+a {
+	color: #4099FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #260e1b;
+  text-decoration: none;
 }

@@ -1,5 +1,3 @@
-// @flow
-
 const webpack = require('webpack');
 const path = require('path');
 
@@ -28,7 +26,7 @@ const config = {
         {
           test: /.jsx?$/,
           loader: 'babel-loader',
-          exclude: /node_modules/,
+          exclude: /node_modules|public/,
         }
       ]
     },
