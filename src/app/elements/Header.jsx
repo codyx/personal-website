@@ -1,17 +1,19 @@
 import React from 'react';
-import {
-  Card,
+import PropTypes from 'prop-types';
+import Card, {
   CardContent,
   CardMedia,
 } from 'material-ui/Card';
-import Layout from 'material-ui/Layout';
+import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
+import Checkbox from 'material-ui/Checkbox';
+import LightbulbOutline from 'material-ui-icons/LightbulbOutline';
 import styled from 'styled-components';
 import Technologies from './Technologies';
 
 const CustomCard = styled(Card)`
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,16 +26,21 @@ const HeaderPic = styled.img`
 
 const CustomCardMedia = styled(CardMedia)`
   overflow: hidden;
-  height: 85%;
+  height: 100%;
 `;
 
-const Header = () => (
-  <Layout item xs={12}>
+const Header = props => (
+  <Grid item xs={12}>
     <CustomCard>
       <CustomCardMedia>
-        <HeaderPic src="dist/jpg/header-pic.jpg" alt="Art" />
+        <HeaderPic src={`dist/jpg/header-pic-${props.theme}.jpg`} alt="Art" />
       </CustomCardMedia>
       <CardContent>
+        <Checkbox
+          icon={<LightbulbOutline />}
+          checkedIcon={<LightbulbOutline />}
+          onChange={props.toggleLightSwitch}
+        />
         <Typography type="body1">Aimeric Seguin</Typography>
         <Typography type="headline" component="h2">
           Software Engineer
@@ -41,7 +48,12 @@ const Header = () => (
         <Technologies />
       </CardContent>
     </CustomCard>
-  </Layout>
+  </Grid>
 );
+
+Header.propTypes = {
+  toggleLightSwitch: PropTypes.func.isRequired,
+  theme: PropTypes.string.isRequired,
+};
 
 export default Header;
