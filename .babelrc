@@ -1,4 +1,4 @@
 {
-  "presets": ["flow", "es2016", "react"],
+  "presets": ["flow", "es2015", "es2016", "react"],
   "plugins": ["transform-class-properties"]
 }
