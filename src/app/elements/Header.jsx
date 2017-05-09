@@ -1,5 +1,6 @@
+// @flow
+
 import React from 'react';
-import PropTypes from 'prop-types';
 import Card, {
   CardContent,
   CardMedia,
@@ -29,7 +30,7 @@ const CustomCardMedia = styled(CardMedia)`
   height: 100%;
 `;
 
-const Header = props => (
+const Header = (props: { toggleLightSwitch: () => void, theme: string }) => (
   <Grid item xs={12}>
     <CustomCard>
       <CustomCardMedia>
@@ -50,10 +51,5 @@ const Header = props => (
     </CustomCard>
   </Grid>
 );
-
-Header.propTypes = {
-  toggleLightSwitch: PropTypes.func.isRequired,
-  theme: PropTypes.string.isRequired,
-};
 
 export default Header;

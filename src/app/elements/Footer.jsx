@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';

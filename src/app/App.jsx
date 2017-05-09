@@ -11,9 +11,7 @@ import Home from './Home';
 injectTapEventPlugin();
 
 export default class App extends Component {
-  state = {
-    theme: 'light',
-  }
+  state: { theme: string } = { theme: 'light' }
 
   toggleLightSwitch = () => {
     this.setState({ theme: this.state.theme === 'light' ? 'dark' : 'light' }, () => {
