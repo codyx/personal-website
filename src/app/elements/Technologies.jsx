@@ -7,8 +7,9 @@ const stack = [
   { name: 'node.js', iconName: 'nodejs' },
   { name: 'react.js', iconName: 'react' },
   { name: 'mongodb/mysql', iconName: 'database' },
-  { name: 'go', iconName: 'gopher' },
+  { name: 'python', iconName: 'python' },
   { name: 'c++', iconName: 'cpp' },
+  { name: 'go', iconName: 'gopher' },
 ];
 
 const StackWrapper = styled.div`
