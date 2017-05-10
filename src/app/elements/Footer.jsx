@@ -32,14 +32,18 @@ const Credits = styled.div`
 const Footer = () => (
   <Grid item xs={12}>
     <CustomPaper>
-      <Button fab primary>
-        <a href="https://www.linkedin.com/in/aimeric-seguin-084a14b2/" target="_blank" rel="noopener noreferrer">
-          <CustomAvatar src="dist/png/linkedin.png" alt="linkedin" />
-        </a>
-      </Button>
-      <Button fab primary style={{ marginLeft: 5 }}>
-        <a href="mailto:aimeric.seguin@gmail.com"><CustomAvatar src="dist/png/email.png" alt="email"></CustomAvatar></a>
-      </Button>
+      <div>
+        <Button fab primary>
+          <a href="https://www.linkedin.com/in/aimeric-seguin-084a14b2/" target="_blank" rel="noopener noreferrer">
+            <CustomAvatar src="dist/png/linkedin.png" alt="linkedin" />
+          </a>
+        </Button>
+        <Button fab primary style={{ marginLeft: 5 }}>
+          <a href="mailto:aimeric.seguin@gmail.com">
+            <CustomAvatar src="dist/png/email.png" alt="email"></CustomAvatar>
+          </a>
+        </Button>
+      </div>
       <Credits>Icons made by <a href="http://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></Credits>
       <Credits>Aimeric Seguin &copy; {new Date().getFullYear()}</Credits>
     </CustomPaper>
