@@ -39,12 +39,12 @@ const Footer = () => (
       </Button>
       <Button fab primary style={{ marginLeft: 5 }}>
         <a href="mailto:aimeric.seguin@gmail.com">
-          <CustomAvatar src="dist/png/email.png" alt="email"></CustomAvatar>
+          <CustomAvatar src="dist/png/email.png" alt="email" />
         </a>
       </Button>
       <Button fab primary style={{ marginLeft: 5 }}>
         <a href="https://github.com/codyx" target="_blank" rel="noopener noreferrer">
-          <CustomAvatar src="dist/png/github.png" alt="github"></CustomAvatar>
+          <CustomAvatar src="dist/png/github.png" alt="github" />
         </a>
       </Button>
       <Credits>Icons made by <a href="http://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></Credits>
