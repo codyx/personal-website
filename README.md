@@ -1,7 +1,7 @@
 # personal-website
 👨‍💻 My personal Website made using React.js 🚀
 
-![alt preview](https://puu.sh/wph5q/0cda13cf26.png)
+[Demo](https://www.aimeric-seguin.com)
 
 Node ✅
 React ✅
