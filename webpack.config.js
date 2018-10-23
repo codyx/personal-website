@@ -6,6 +6,7 @@ const BUILD_DIR = path.resolve(__dirname, 'public/dist');
 const PORT = process.env.APP_PORT || 3000;
 
 const config = {
+  mode: 'development',
   entry: [
     'react-hot-loader/patch', // Activate HMR for React
     `webpack-dev-server/client?http://localhost:${PORT}`,
@@ -22,7 +23,7 @@ const config = {
   },
   devtool: 'inline-source-map',
   module: {
-      loaders: [
+      rules: [
         {
           test: /.jsx?$/,
           loader: 'babel-loader',

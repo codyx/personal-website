@@ -1,5 +1,5 @@
-# personal-website
-👨‍💻 My personal Website made using React.js 🚀
+# personal-portfolio
+👨‍💻 My personal portfolio made using React.js 🚀
 
 [Demo](https://www.aimeric-seguin.com)
 

@@ -1,11 +1,10 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "description": "My personal Website",
+  "name": "personal-portfolio",
+  "version": "2.0.0",
+  "description": "My personal portfolio",
   "main": "src/index.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack -p --config ./webpack.production.config.js",
-    "prepublish": "npm run build",
     "start-dev": "./node_modules/.bin/webpack-dev-server --content-base public",
     "start-prod": "npm run build && open public/index.production.html",
     "flow": "flow",
@@ -13,43 +12,44 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codyx/personal-website.git"
+    "url": "git+https://github.com/codyx/personal-portfolio.git"
   },
   "keywords": [
     "node",
     "js",
     "react",
+    "javascript",
+    "ui",
     "developer"
   ],
   "author": "Aimeric Seguin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codyx/personal-website/issues"
+    "url": "https://github.com/codyx/personal-portfolio/issues"
   },
-  "homepage": "https://github.com/codyx/personal-website#readme",
+  "homepage": "https://github.com/codyx/personal-portfolio#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.0.0",
+    "@babel/core": "^7.1.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2016": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^3.19.0",
-    "eslint-config-google": "^0.7.1",
-    "eslint-plugin-react": "^6.10.3",
-    "flow-bin": "^0.44.2",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.4"
+    "eslint": "^5.7.0",
+    "eslint-config-google": "^0.11.0",
+    "eslint-plugin-react": "^7.11.1",
+    "flow-bin": "^0.83.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.11",
+    "webpack": "^4.22.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
-    "material-ui": "^1.0.0-alpha.13",
-    "material-ui-icons": "^1.0.0-alpha.3",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-hot-loader": "^3.0.0-beta.6",
-    "react-tap-event-plugin": "^2.0.1",
-    "styled-components": "1.4.6"
+    "@material-ui/core": "^3.3.0",
+    "@material-ui/icons": "^3.0.1",
+    "react-tap-event-plugin": "^3.0.3",
+    "styled-components": "^4.0.2"
   }
 }

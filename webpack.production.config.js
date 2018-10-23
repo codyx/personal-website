@@ -30,8 +30,8 @@ const config = {
         'process.env': {
           NODE_ENV: JSON.stringify('production')
         }
-      }),
-      new webpack.optimize.UglifyJsPlugin(),
+      })
+      // TODO: use config.optimization.minimize (instead of old UglifyJsPlugin)
   ],
 };
 
