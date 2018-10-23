@@ -3,11 +3,13 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-export default class App extends React.Component {
+type Props = {};
+
+export default class App extends React.Component<Props> {
     render() {
         return (
-            <Button variant="contained" color="primary">
-            Hello World
+					<Button variant="contained" color="primary">
+            Hi!
           </Button>
         );
     }
